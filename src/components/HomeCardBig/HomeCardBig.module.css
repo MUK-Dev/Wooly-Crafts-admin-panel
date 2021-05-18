@@ -1,0 +1,11 @@
+.OrdersCard {
+	margin: 20px auto;
+	width: 80%;
+	border-radius: 5px;
+	color: #eaebed;
+	/* background-color: #163138; */
+}
+
+.CardBody {
+	padding: 20px;
+}

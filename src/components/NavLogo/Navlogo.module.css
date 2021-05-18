@@ -1,0 +1,12 @@
+.Logo path {
+	stroke-dasharray: 410px;
+	stroke-dashoffset: 405px;
+	stroke: #ff8882;
+	animation: line-anim 5s ease forwards;
+}
+
+@keyframes line-anim {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
