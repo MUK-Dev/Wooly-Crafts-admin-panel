@@ -4,7 +4,6 @@ import M from "materialize-css/dist/js/materialize.min";
 import Navlogo from "../../components/NavLogo/Navlogo";
 import SideNav from "../../components/SideNav/SideNav";
 import SideNavTrigger from "../../components/SideNavTrigger/SideNavTrigger";
-import NavButtonLarge from "../../components/NavButtonLarge/NavButtonLarge";
 
 class Navbar extends Component {
 	componentDidMount() {

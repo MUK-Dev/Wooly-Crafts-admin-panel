@@ -6,7 +6,7 @@ const button = (props) => (
 		to={props.path}
 		className="waves-effect waves-light btn"
 		onClick={props.clicked}
-		style={{ backgroundColor: "#194350" }}
+		style={{ backgroundColor: "#ff8882" }}
 	>
 		{props.children}
 	</Link>

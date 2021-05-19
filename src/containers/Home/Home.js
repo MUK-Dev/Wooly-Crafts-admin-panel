@@ -11,37 +11,28 @@ class Home extends Component {
 			<div className={classes.Home}>
 				<Row>
 					<TwoColumnOnSmall>
-						<HomeCard title="New Product">
+						<HomeCard path="/newProduct" title="New Product">
 							The new Product will be released and will be available to the
 							public.
 						</HomeCard>
 					</TwoColumnOnSmall>
 					<TwoColumnOnSmall>
-						<HomeCard title="Contact Us Form" extra={"Total Messages: " + 0}>
+						<HomeCard path="/contactFormSubmits" title="Contact Us Form">
 							The messages submitted in the contact form on the user website
 							will be here
 						</HomeCard>
 					</TwoColumnOnSmall>
 					<TwoColumnOnSmall>
-						<HomeCard
-							title="Finished Orders"
-							extra={"Finished Orders: " + 0}
-						></HomeCard>
+						<HomeCard path="/finishedOrders" title="Finished Orders"></HomeCard>
 					</TwoColumnOnSmall>
 					<TwoColumnOnSmall>
-						<HomeCard title="Edit Products" extra={"Total Products: " + 0}>
+						<HomeCard path="/editProducts" title="Edit Products">
 							Edit previos product.
 						</HomeCard>
 					</TwoColumnOnSmall>
 				</Row>
-				<HomeCardBig
-					title="Click here for all Orders"
-					extra={"Total Orders: " + 0}
-				></HomeCardBig>
-				<HomeCardBig
-					title="All Registered Users"
-					extra={"Total Users: " + 0}
-				></HomeCardBig>
+				<HomeCardBig title="Click here for all Orders"></HomeCardBig>
+				<HomeCardBig title="All Registered Users"></HomeCardBig>
 			</div>
 		);
 	}
