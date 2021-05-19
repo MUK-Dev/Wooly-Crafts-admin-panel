@@ -8,6 +8,9 @@ class EditProducts extends Component {
 	render() {
 		return (
 			<div className={classes.EditProduct}>
+				<p className="center-align" style={{ marginTop: "0" }}>
+					Total Products: 0
+				</p>
 				<Row>
 					<TwoColumnOnSmall>
 						<ProductCard />

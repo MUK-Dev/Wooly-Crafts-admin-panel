@@ -31,8 +31,14 @@ class Home extends Component {
 						</HomeCard>
 					</TwoColumnOnSmall>
 				</Row>
-				<HomeCardBig title="Click here for all Orders"></HomeCardBig>
-				<HomeCardBig title="All Registered Users"></HomeCardBig>
+				<HomeCardBig
+					path="/orders"
+					title="Click here for all Orders"
+				></HomeCardBig>
+				<HomeCardBig
+					path="/allUsers"
+					title="All Registered Users"
+				></HomeCardBig>
 			</div>
 		);
 	}

@@ -19,22 +19,22 @@ const sideNav = (props) => (
 		<NavItem path="/">
 			<p>Home</p>
 		</NavItem>
-		<NavItem path="/contact">
+		<NavItem path="/newProduct">
 			<p>New Product</p>
 		</NavItem>
-		<NavItem path="/contact">
+		<NavItem path="/contactFormSubmits">
 			<p>Contact Submission</p>
 		</NavItem>
-		<NavItem path="/products">
+		<NavItem path="/finishedOrders">
 			<p>Finished Orders</p>
 		</NavItem>
-		<NavItem path="/products">
+		<NavItem path="/editProducts">
 			<p>Edit Products</p>
 		</NavItem>
-		<NavItem path="/products">
+		<NavItem path="/orders">
 			<p>Orders</p>
 		</NavItem>
-		<NavItem path="/products">
+		<NavItem path="/allUsers">
 			<p>All Registered Users</p>
 		</NavItem>
 	</ul>

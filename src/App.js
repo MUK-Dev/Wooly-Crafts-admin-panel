@@ -7,6 +7,8 @@ import ContactFormSubmits from "./containers/ContactFormSubmits/ContactFormSubmi
 import FinishedOrders from "./containers/FinishedOrders/FinishedOrders";
 import EditProducts from "./containers/EditProducts/EditProducts";
 import EditProduct from "./containers/EditProducts/EditProduct/EditProduct";
+import Orders from "./containers/Orders/Orders";
+import AllUsers from "./containers/AllUsers/AllUsers";
 
 class App extends Component {
 	render() {
@@ -22,7 +24,9 @@ class App extends Component {
 					/>
 					<Route path="/finishedOrders" exact component={FinishedOrders} />
 					<Route path="/editProducts" exact component={EditProducts} />
-					<Route path="/editProduct/product" exact component={EditProduct} />;
+					<Route path="/editProduct/product" exact component={EditProduct} />
+					<Route path="/orders" exact component={Orders} />
+					<Route path="/allUsers" exact component={AllUsers} />
 				</Layout>
 			</div>
 		);
