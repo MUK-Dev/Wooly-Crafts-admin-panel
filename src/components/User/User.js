@@ -19,6 +19,10 @@ const user = (props) => (
 				<b>Contact No: </b>
 				{props.phone}
 			</p>
+			<p>
+				<b>Registered On: </b>
+				{props.date}
+			</p>
 		</div>
 	</div>
 );

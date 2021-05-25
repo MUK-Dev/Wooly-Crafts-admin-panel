@@ -11,8 +11,14 @@ const cartItem = (props) => (
 			</div>
 			<div className="col s9">
 				<div className="col">
-					<p>Product Name</p>
-					<p>Rs: 2500</p>
+					<p>
+						<b>Item Name: </b>
+						{props.productName}
+					</p>
+					<p>
+						<b>Price </b>
+						Rs: {props.productPrice}
+					</p>
 				</div>
 			</div>
 		</Row>

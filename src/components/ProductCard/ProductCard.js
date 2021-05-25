@@ -1,21 +1,48 @@
 import React from "react";
-import sampleImage from "../../assets/wool.svg";
-import Button from "../Button/Button";
 import classes from "./ProductCard.module.css";
 
 const productCard = (props) => (
 	<div
-		className={["card", "small", classes.FadeIn].join(" ")}
+		className={["card", classes.FadeIn].join(" ")}
 		style={{ backgroundColor: "#163138" }}
 	>
 		<div className="card-image">
-			<img src={sampleImage} alt="Product" />
+			<img
+				src={`http://192.168.18.44:5000/${props.image}`}
+				alt="Product"
+				className={classes.Image}
+			/>
 		</div>
 		<div className="card-content">
-			<span className="card-title">Card Title</span>
+			<span className="card-title">{props.name}</span>
+			<h6>Price Rs: {props.price}</h6>
+			<h5>
+				Sold:{" "}
+				{props.sold ? (
+					<span style={{ color: "red" }}>Yes</span>
+				) : (
+					<span style={{ color: "green" }}>No</span>
+				)}
+			</h5>
 		</div>
 		<div className="card-action">
-			<Button path="/editProduct/product">Details</Button>
+			{props.sold ? (
+				<button
+					className="waves-effect waves-light btn"
+					onClick={props.changeAvailablility}
+					style={{ backgroundColor: "#ff8882" }}
+				>
+					Mark As Available
+				</button>
+			) : (
+				<button
+					className="waves-effect waves-light btn"
+					onClick={props.changeAvailablility}
+					style={{ backgroundColor: "#ff8882" }}
+				>
+					Mark As Sold
+				</button>
+			)}
 		</div>
 	</div>
 );
