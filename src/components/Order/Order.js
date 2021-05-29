@@ -35,7 +35,7 @@ const order = (props) => {
 					</p>
 					<br />
 					<p className="left-align">
-						<b>RS:</b> {props.amount}
+						<b>Total Price + Delivery Charges </b>Rs: {props.amount}
 					</p>
 					<br />
 					<p className="left-align">
@@ -54,8 +54,9 @@ const order = (props) => {
 							return (
 								<div key={product._id}>
 									<OrderedProduct
-										productName={product.productName}
-										productPrice={product.productPrice}
+										productImage={product.image}
+										productName={product.name}
+										productPrice={product.price}
 									/>
 								</div>
 							);

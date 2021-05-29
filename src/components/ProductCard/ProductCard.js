@@ -12,6 +12,13 @@ const productCard = (props) => (
 				alt="Product"
 				className={classes.Image}
 			/>
+			<button
+				onClick={props.deleteProduct}
+				className="btn-floating halfway-fab waves-effect waves-purple"
+				style={{ backgroundColor: "#ff8882" }}
+			>
+				<i className="material-icons">delete_forever</i>
+			</button>
 		</div>
 		<div className="card-content">
 			<span className="card-title">{props.name}</span>

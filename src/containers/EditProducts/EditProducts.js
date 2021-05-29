@@ -43,6 +43,22 @@ class EditProducts extends Component {
 			});
 	};
 
+	deleteProduct = (productId) => {
+		this.setState({ showSpinner: true });
+		axios
+			.delete("/products/" + productId)
+			.then((res) => {
+				this.setState({ responseMessage: res.data, showSpinner: false });
+				setTimeout(() => {
+					this.setState({ responseMessage: null });
+				}, 4000);
+			})
+			.catch((err) => {
+				console.log(err);
+				this.setState({ showSpinner: false });
+			});
+	};
+
 	render() {
 		return (
 			<div className={classes.EditProduct}>
@@ -67,6 +83,7 @@ class EditProducts extends Component {
 												sold={product.soldOut}
 												price={product.price}
 												image={product.images[0]}
+												deleteProduct={() => this.deleteProduct(product._id)}
 												changeAvailablility={() =>
 													this.markSoldHandler(product._id)
 												}
