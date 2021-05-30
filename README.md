@@ -4,16 +4,13 @@
 
 ## Pages:
 - Home
-- Contact Us
-- All Products
-- Login
-- Register
-- SingleProduct
-- Side Drawer
-- Cart
-- Checkout
+- Add New Product
+- Contact Form Submissions
+- Edit Products
+- Finished Orders Record
+- Active Orders List
+- All Registered Customers List
 
-### `State Management Done With Redux`
 ### `For Http Request axios is used`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
