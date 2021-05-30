@@ -2,7 +2,7 @@
 
 [Video Demo Of The Project](https://www.youtube.com/watch?v=SFy9TtDC6Aw)
 
-##Pages:
+## Pages:
 - Home
 - Contact Us
 - All Products
@@ -13,8 +13,8 @@
 - Cart
 - Checkout
 
-###`State Management Done With Redux`
-###`For Http Request axios is used`
+### `State Management Done With Redux`
+### `For Http Request axios is used`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
